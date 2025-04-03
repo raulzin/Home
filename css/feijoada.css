@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: rgb(247, 223, 158);
+}
+
+.navbar {
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  flex-flow: row rap;
+  height: 100px;
+  background-color: #0000009c;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  /* border: 1px solide white;  */
+  flex: 20%;
+  text-align: center;
+  font-family: italic bold 2em "Work Sans", sans-serif;
+  color: white;
+}
+
+.menu {
+  flex: 80%;
+  text-align: right;
+  padding: 20px;
+  /* border: 1px solide white; */
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 20px 16px;
+  font-size: 20px;
+}
+.menu a:hover {
+  border-top: 4px solid rebeccapurple;
+  border-bottom: 4px solid rebeccapurple;
+  color: rgb(252, 252, 252);
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../imagens/PraiaCopacabana.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+}
+
+.hero-content {
+  text-align: center; /* Centraliza o conteúdo */
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo preto translúcido */
+  color: #f0f0f0; /* Cor da fonte em cinza claro */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  display: inline-block; /* Ajusta o tamanho do fundo ao conteúdo */
+}
+
+.hero-content h1 {
+  font-size: 2.5em; /* Tamanho do título */
+  margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+.hero-content p {
+  font-size: 1.2em; /* Tamanho do texto do parágrafo */
+  line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+.hero-content img.hero-image {
+  display: block; /* Garante que a imagem seja tratada como um bloco */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  max-width: 200px; /* Ajusta a largura da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-bottom: 20px; /* Espaço entre a imagem e o título */
+}
