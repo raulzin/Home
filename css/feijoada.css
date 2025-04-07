@@ -4,7 +4,7 @@
 }
 body {
   margin: 0;
-  background-color: rgb(247, 223, 158);
+  background-color: rgb(2, 0, 0);
 }
 
 .navbar {
@@ -82,4 +82,96 @@ body {
   max-width: 200px; /* Ajusta a largura da imagem */
   height: auto; /* Mantém a proporção da imagem */
   margin-bottom: 20px; /* Espaço entre a imagem e o título */
+}
+
+.projects {
+  display: flex; /* Ativa o Flexbox */
+  flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 20px; /* Espaçamento entre os itens */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo preto translúcido */
+  border-radius: 10px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease; /* Transição suave */
+  color: #fff; /* Texto branco para contraste */
+  text-align: center; /* Centraliza o texto */
+}
+
+.projects h2 {
+  width: 100%; /* O título ocupa toda a largura */
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 20px; /* Espaço abaixo do título */
+  font-size: 2em; /* Tamanho do título */
+  color: #fff; /* Cor do título */
+}
+
+.project {
+  flex: 1 1 calc(33.333% - 20px); /* Cada item ocupa 1/3 da largura */
+  max-width: 300px; /* Largura máxima para cada item */
+  text-align: center; /* Centraliza o texto dentro do item */
+  margin: 10px; /* Margem ao redor dos itens */
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo leve para cada projeto */
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 10px; /* Espaçamento interno */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Efeitos de transição */
+}
+
+.project:hover {
+  background-color: rgba(
+    0,
+    128,
+    255,
+    0.2
+  ); /* Fundo azul claro ao passar o mouse */
+  transform: scale(1.05); /* Aumenta levemente o tamanho ao passar o mouse */
+}
+
+.project img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do item */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+.project h3 {
+  margin: 10px 0 5px; /* Espaçamento ao redor do título */
+}
+
+.project p {
+  color: #ddd; /* Texto com contraste mais suave */
+}
+
+.contact,
+p {
+  font-family: "Work Sans", sans-serif; /* Fonte do texto */
+  color: #fff; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  padding: 20px; /* Espaçamento interno */
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo preto translúcido */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+.contact ul {
+  list-style: none; /* Remove os marcadores da lista */
+  padding: 0;
+}
+
+.contact li {
+  margin-bottom: 10px; /* Espaçamento entre os itens */
+  font-size: 1.2em; /* Aumenta o tamanho do texto */
+  display: flex; /* Exibe os itens em linha */
+  align-items: center; /* Alinha os ícones ao texto */
+  gap: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+.contact i {
+  color: #00f; /* Cor azul para os ícones */
+  font-size: 1.5em; /* Tamanho dos ícones */
+}
+
+.contact a {
+  color: #00f; /* Cor azul para os links */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+.contact a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
