@@ -57,6 +57,15 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+.hero-image {
+  width: 150px; /* Ajuste o tamanho da imagem */
+  height: 150px; /* Certifique-se de que a altura e a largura sejam iguais */
+  border-radius: 40%; /* Torna a borda circular */
+  object-fit: cover; /* Garante que a imagem seja cortada corretamente */
+  border: 3px solid #fff; /* Opcional: Adiciona uma borda branca */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Opcional: Adiciona uma sombra */
+}
+
 .hero-content {
   text-align: center; /* Centraliza o conteúdo */
   background-color: rgba(0, 0, 0, 0.6); /* Fundo preto translúcido */
